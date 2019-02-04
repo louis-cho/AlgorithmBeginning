@@ -1,6 +1,9 @@
-핵심 코드는 pairWith라는 변수가 있는 for 반복문이다.
+핵심 코드는 pairWith 변수가 있는 for 반복문이다.
 
-pairWith는 firstFree보다 작을 수 없기에 반복을 피할 수 있으며, 이와 더불어 주의 깊게 봐야할 코드는 재귀함수 호출을 통해 한 단계 씩 친구 쌍을 만들어 가며, 재귀 함수 호출의 특징 상 깊이가 깊어져도 앞선 호출에 존재했던 함수가 사라지지 않기에 taken[firstFree] = taken[pairWith] = false; 를 통해 다시 taken 배열을 0으로 초기화 시켜 pairWith가 다음 for문에서 1 증가했을 때 같은 firstFree에 다른 pairWith가 오도록 조정해준다.
+pairWith는 firstFree보다 작을 수 없기에 반복을 피할 수 있으며, 이와 더불어 주의 깊게 봐야할 코드는 
+재귀함수 호출을 통해 한 단계 씩 친구 쌍을 만들어 가며, 재귀 함수 호출의 특징 상 깊이가 깊어져도 
+앞선 호출에 존재했던 함수가 사라지지 않기에 taken[firstFree] = taken[pairWith] = false; 를 통해 
+다시 taken 배열을 0으로 초기화 시켜 pairWith가 다음 for문에서 1 증가했을 때 같은 firstFree에 다른 pairWith가 오도록 조정해준다.
 
 ex) (firstFree, pairWith) [ (0,1), (2,3) ] 2번 호출 (깊이 2)
 (2,3)에서 taken[firstFree] = taken[pairWith] = false
