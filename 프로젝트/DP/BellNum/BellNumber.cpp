@@ -4,7 +4,7 @@
 int main(void) {
 	int** arr = NULL;
 	int temp;
-	printf("몇 번째 Bell Number를 구할 것 인가요? >> ");
+	printf("Calculate Nth Bell Number? >> ");
 	scanf("%d", &temp);
 
 	int n = temp - 1;
