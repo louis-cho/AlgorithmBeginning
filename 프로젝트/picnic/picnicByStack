@@ -1,6 +1,0 @@
-소풍 문제에 추가하여 스택을 통해서도 구현이 가능할 거란 생각이 들었다.
-
-Depth First Search를 이용하여 firstFree가 -1이 아닐 때까지 짝을 찾아 스택에 집어넣고 경우의 수를 1 추가한다.
-그 후 스택의 원소를 하나 씩 꺼내 pair<int, int> 의 원소를 각각 저장한 뒤 pop한 pair에서 동일한 first int 값과 
-기존의 pair int의 second 값에 변화가 있는 값의 areFriends 여부를 확인한 뒤 다시 집어 넣고 firstFree가 -1인지 
-확인하는 작업을 반복하면 재귀가 아닌 반복문으로도 문제를 해결할 수 있을 것 같다.

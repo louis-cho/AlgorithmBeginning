@@ -1,2 +1,2 @@
 # AlgorithmBeginning
-Copying already made sources from texts, understand and analyze.
+Study Algorithm from Baekjoon Online Judge
